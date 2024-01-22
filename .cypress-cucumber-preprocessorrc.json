@@ -15,8 +15,31 @@
     "[filepath]/**/*.{js,ts}",
     "[filepath].{js,ts}",
     "cypress/e2e/stepDefinitions/*.{js,ts}",
-    "[filepath]\\***.{js,ts}",
+    "[filepath]/***.{js,ts}",
     "[filepath].{js,ts}",
-    "cypress\\e2e\\stepDefinitions\\*.{js,ts}"
+    "cypress/e2e/stepDefinitions/*.{js,ts}"
+  ],
+  "cucumber.features": [
+    "src/test/**/*.feature",
+    "features/**/*.feature",
+    "tests/**/*.feature",
+    "*specs*/**/*.feature"
+  ],
+  "cucumber.glue": [
+    "src/test/**/*.java",
+    "features/**/*.js",
+    "features/**/*.jsx",
+    "features/**/*.ts",
+    "features/**/*.tsx",
+    "features/**/*.php",
+    "features/**/*.py",
+    "tests/**/*.py",
+    "tests/**/*.rs",
+    "features/**/*.rs",
+    "features/**/*.rb",
+    "*specs*/**/*.cs"
+  ],
+  "cucumber.parameterTypes": [
+    { "name": "actor", "regexp": "[A-Z][a-z]+" }
   ]
 }
